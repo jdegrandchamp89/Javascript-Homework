@@ -1,0 +1,49 @@
+<!-- Create a simple checkout form that collects a billing address (name, address, city, state, zip) and shipping
+address with the same fields. Add a checkbox over the shipping address with the label “Shipping address
+is the same as billing.” If the user clicks on the checkbox, then automatically transfer the contents of the
+billing address fields into the shipping address fields and disable the shipping fields for entry. If the user
+unchecks the box, the contents of the fields should be left as is, but the fields should once again be
+enabled. -->
+
+<head lang="en">
+    <title>Form For Javascript Problem 2</title>
+    <!-- <link rel="stylesheet" type="text/css" href="problem1.css"> -->
+</head>
+
+<form>
+    <h4>Billing Address</h4>
+    Name:
+    <input type="text" name="name" id="billingname">
+    <br>
+    Address:
+    <input type="text" name="address" id="billingaddress">
+    <br>
+    City:
+    <input type="text" name="city" id="billingcity">
+    State:
+    <input type="text" name="state" id="billingstate">
+    Zip:
+    <input type="text" name="zip" id="billingzip">
+    <br>
+    <br>
+    <h4>Shipping Address</h4>
+    Shipping is same as Billing:
+    <input type="checkbox" name="shippingIsSame" value="ShippingIsSame" id="shippingIsSame"> <!-- onclick="copy(this)" -->
+    <br>
+    Name:
+    <input type="text" name="shippingname" id="shippingname">
+    <br>
+    Address:
+    <input type="text" name="shippingaddress" id="shippingaddress">
+    <br>
+    City:
+    <input type="text" name="shippingcity" id="shippingcity">
+    State:
+    <input type="text" name="shippingstate" id="shippingstate">
+    Zip:
+    <input type="text" name="shippingzip" id="shippingzip">
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="underscore-min.js"></script>
+<script type="text/javascript" src="problem4.js"></script>
